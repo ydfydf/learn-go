@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>表格</title>
+
+    <meta name="description" content="Kidd.StickyTable is jQuery plugin to modify a table element with a fixed header element and fixed left columns (freeze table header and the left columns).">
+    <meta name="author" content="Danukidd">
+    <meta name="copyright" content="Danukidd">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/kidd.stickytable.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/colpick.css" />
+
+    <style>
+        @media (min-width: 0px) and (max-width: 800px) {
+            #options-area, #preview-area {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        @media (min-width: 801px) {
+            #options-area {
+                width: 35%;
+            }
+            #preview-area {
+                width: 65%;
+            }
+        }
+        label, fieldset {
+            font-family: arial;
+            font-size: 12px;
+            font-weight: 400;
+        }
+        label {
+            float: left;
+            margin-right: 5px;
+            color: #333;
+        }
+        fieldset {
+            margin-top: 5px;
+        }
+        legend {
+            color: blue;
+        }
+        .inputpicker {
+            margin:0;
+            padding:0;
+            border:1px solid #ccc;
+            width:100px;
+            height:20px;
+            border-right:20px solid #ccc;
+            line-height:20px;
+            margin-bottom: 5px;
+        }
+        .btn {
+            -moz-user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857;
+            margin-bottom: 0;
+            padding: 6px 12px;
+            text-align: center;
+            vertical-align: middle;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+        .btn:focus {
+            outline: thin dotted;
+            outline-offset: -2px;
+        }
+        .btn:hover, .btn:focus {
+            color: #333 !important;
+            text-decoration: none;
+        }
+        .btn:active, .btn.active {
+            background-image: none;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset;
+            outline: 0 none;
+        }
+        .btn.disabled, .btn[disabled] {
+            box-shadow: none;
+            cursor: not-allowed;
+            opacity: 0.65;
+            pointer-events: none;
+        }
+        .btn-default {
+            background-color: #fff;
+            border-color: #ccc;
+            color: #333;
+        }
+        .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
+            background-color: #ebebeb;
+            border-color: #adadad;
+            color: #333;
+        }
+        .btn-default:active, .btn-default.active{
+            background-image: none;
+        }
+    </style>
+
+</head>
+<body class="">
+
+<div id="preview-area" style="float: left; min-width: 300px;">
+    <table class="overflow-y preview">
+        <thead>
+        </thead>
+        <tbody>
+        {{range .Items}}
+        <tr>
+            <td><a href="{{.Url}}">{{.Payload.Name}}</a></td>
+            {{with .Payload}}
+            <td>{{.Gender}}</td>
+            <td>{{.Age}}</td>
+            <td>{{.Height}}</td>
+            <td>{{.Weight}}</td>
+            <td>{{.Income}}</td>
+            <td>{{.Marriage}}</td>
+            <td>{{.Education}}</td>
+            <td>{{.Occupation}}</td>
+            <td>{{.Hokou}}</td>
+            <td>{{.Xinzuo}}</td>
+            <td>{{.House}}</td>
+            <td>{{.Car}}</td>
+            {{end}}
+        </tr>
+        [<!--注意这里的end，上一个end结束range，这个end才是结束整段语句 -->]
+        {{end}}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

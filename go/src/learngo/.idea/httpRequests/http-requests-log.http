@@ -1,0 +1,476 @@
+GET http://192.168.78.133:9200/dating_profile/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 成都 Payload.Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-06-02T052902.200.json
+
+###
+
+GET http://192.168.78.133:9200/dating_profile/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 成都 Payload.Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-06-02T052745.200.json
+
+###
+
+GET http://192.168.78.133:9200/dating_profile/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 成都 Payload.Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-06-02T052652.200.json
+
+###
+
+GET http://192.168.78.131:9200/dating_profile/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 成都 Payload.Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+###
+
+GET http://192.168.78.133:9200/dating_profile/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 成都 Payload.Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-06-02T052239.200.json
+
+###
+
+GET http://192.168.78.131:9200/dating_profile/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 成都 Payload.Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+###
+
+GET http://192.168.78.131:9200/dating_profile/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 成都 Payload.Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-06-01T105343.200.json
+
+###
+
+GET http://192.168.78.131:9200/dating_profile/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 成都 Payload.Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-06-01T023321.200.json
+
+###
+
+GET http://192.168.78.131:9200/dating_profile/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 成都 Payload.Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-06-01T023129.200.json
+
+###
+
+GET http://192.168.78.131:9200/test1/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 成都 Payload.Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-06-01T021618.200.json
+
+###
+
+GET http://192.168.78.131:9200/dating_profile/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 成都 Payload.Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-06-01T015346.404.json
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 成都 Payload.Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 成都 Payload.Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-29T043744.200.json
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 Payload.Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-29T043713.200.json
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-29T043623.200.json
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/_search
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-29T043542.200.json
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/_search
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-29T043041.404.json
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/106093100
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-29T043029.404.json
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/106093100
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/106093100
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/106093100
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-29T024618.200.json
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/106093100?pretty=&size=100&q=女 已购房 已购车 Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-29T024555.400.json
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-29T024307.200.json
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-28T091729.404.json
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-28T062612.200.json
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-28T062548.200.json
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/_search?pretty=&size=100&q=女 已购房 已购车 Age:(<28)
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-28T062450.200.json
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/_search?pretty=&size=100
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-28T061646.200.json
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/_search
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-28T061014.200.json
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/_search
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-28T060856.200.json
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/_search
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-28T055607.200.json
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/AWOmE7HwS1SpsuK6KLyE
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-28T052857.200.json
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/_search
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-28T052842.200.json
+
+###
+
+GET http://192.168.78.130:9200/dating_profile/zhenai/_search
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-28T052716.200.json
+
+###
+
+GET http://192.168.78.130:9200/
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-28T034842.200.json
+
+###
+
+PUT http://192.168.78.130:9200/imooc/course/1
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf",   "age":"25" }
+
+<> 2018-05-28T031722.200.json
+
+###
+
+GET http://192.168.78.130:9200/imooc/course/_search
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name":"maidou",   "age":"1.5",   "weight":"36kg" }
+
+<> 2018-05-28T031408.200.json
+
+###
+
+GET http://192.168.78.130:9200/imooc/course/_search?q=ydf&pretty=
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name":"maidou",   "age":"1.5",   "weight":"36kg" }
+
+<> 2018-05-28T031352.200.json
+
+###
+
+GET http://192.168.78.130:9200/imooc/course/?q=ydf&pretty=
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name":"maidou",   "age":"1.5",   "weight":"36kg" }
+
+<> 2018-05-28T031342.400.json
+
+###
+
+GET http://192.168.78.130:9200/imooc/course/_search?q=ydf&pretty=
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "interview",   "instructor": "ccmouse" }
+
+<> 2018-05-28T030501.200.json
+
+###
+
+GET http://192.168.78.130:9200/imooc/course/_search?a=ydf
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "interview",   "instructor": "ccmouse" }
+
+<> 2018-05-28T030300.400.json
+
+###
+
+GET http://192.168.78.130:9200/imooc/course/_search?q=ydf
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "interview",   "instructor": "ccmouse" }
+
+<> 2018-05-28T030248.200.json
+
+###
+
+GET http://192.168.78.130:9200/imooc/course/_search
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "interview",   "instructor": "ccmouse" }
+
+<> 2018-05-28T025759.200.json
+
+###
+
+GET http://192.168.78.130:9200/imooc/course/2
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "interview",   "instructor": "ccmouse" }
+
+<> 2018-05-28T025533.200.json
+
+###
+
+POST http://192.168.78.130:9200/imooc/course/2
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "interview",   "instructor": "ccmouse" }
+
+<> 2018-05-28T025528.201.json
+
+###
+
+GET http://192.168.78.130:9200/imooc/course/1
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf" }
+
+<> 2018-05-28T025357.200.json
+
+###
+
+PUT http://192.168.78.130:9200/imooc/course/1
+Content-Type: application/json
+Cache-Control: no-cache
+
+{   "name": "golang",   "learner": "ydf" }
+
+<> 2018-05-28T025258.201.json
+
+###
+
+GET http://192.168.78.130:9200/
+Content-Type: application/json
+Cache-Control: no-cache
+
+<> 2018-05-28T033402.200.json
+
+###
+

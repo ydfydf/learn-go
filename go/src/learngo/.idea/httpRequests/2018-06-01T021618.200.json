@@ -1,0 +1,42 @@
+{
+  "took": 94,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": 1,
+    "max_score": 1.0893298,
+    "hits": [
+      {
+        "_index": "test1",
+        "_type": "zhenai",
+        "_id": "110409917",
+        "_score": 1.0893298,
+        "_source": {
+          "Url": "http://album.zhenai.com/u/110409917",
+          "Type": "zhenai",
+          "Id": "110409917",
+          "Payload": {
+            "Age": 40,
+            "Car": "未购车",
+            "Education": "高中及以下",
+            "Gender": "女",
+            "Height": 160,
+            "Hokou": "广西百色",
+            "House": "未",
+            "Income": "3001-5000元",
+            "Marriage": "未婚",
+            "Name": "静静等待",
+            "Occupation": "监",
+            "Weight": 0,
+            "Xinzuo": "双鱼座"
+          }
+        }
+      }
+    ]
+  }
+}

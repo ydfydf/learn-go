@@ -1,0 +1,263 @@
+
+<!doctype html>
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>表格</title>
+
+    <meta name="description" content="Kidd.StickyTable is jQuery plugin to modify a table element with a fixed header element and fixed left columns (freeze table header and the left columns).">
+    <meta name="author" content="Danukidd">
+    <meta name="copyright" content="Danukidd">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/kidd.stickytable.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/colpick.css" />
+
+    <style>
+        @media (min-width: 0px) and (max-width: 800px) {
+            #options-area, #preview-area {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        @media (min-width: 801px) {
+            #options-area {
+                width: 35%;
+            }
+            #preview-area {
+                width: 65%;
+            }
+        }
+        label, fieldset {
+            font-family: arial;
+            font-size: 12px;
+            font-weight: 400;
+        }
+        label {
+            float: left;
+            margin-right: 5px;
+            color: #333;
+        }
+        fieldset {
+            margin-top: 5px;
+        }
+        legend {
+            color: blue;
+        }
+        .inputpicker {
+            margin:0;
+            padding:0;
+            border:1px solid #ccc;
+            width:100px;
+            height:20px;
+            border-right:20px solid #ccc;
+            line-height:20px;
+            margin-bottom: 5px;
+        }
+        .btn {
+            -moz-user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857;
+            margin-bottom: 0;
+            padding: 6px 12px;
+            text-align: center;
+            vertical-align: middle;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+        .btn:focus {
+            outline: thin dotted;
+            outline-offset: -2px;
+        }
+        .btn:hover, .btn:focus {
+            color: #333 !important;
+            text-decoration: none;
+        }
+        .btn:active, .btn.active {
+            background-image: none;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset;
+            outline: 0 none;
+        }
+        .btn.disabled, .btn[disabled] {
+            box-shadow: none;
+            cursor: not-allowed;
+            opacity: 0.65;
+            pointer-events: none;
+        }
+        .btn-default {
+            background-color: #fff;
+            border-color: #ccc;
+            color: #333;
+        }
+        .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
+            background-color: #ebebeb;
+            border-color: #adadad;
+            color: #333;
+        }
+        .btn-default:active, .btn-default.active{
+            background-image: none;
+        }
+    </style>
+
+</head>
+<body class="">
+<div id="options-area" style="float: left; margin-bottom: 20px;">
+    <div style="padding-right: 10px;">
+        <p style="text-align: center; margin:0; padding: 5px 0; font-family: arial; font-weight: 400; border: 1px solid #ccc; border-bottom: 0; background: #ccc;">选项:</p>
+        <div style="border: 1px solid #ccc; padding: 10px;">
+            <label for="showExportBtn" style="width: 100%;"><input id="showExportBtn" name="showExportBtn" type="checkbox"/> Show Export Button</label>
+            <label for="isTwoSide" style="width: 100%; margin-bottom: 5px;"><input id="isTwoSide" name="isTwoSide" type="checkbox"/> Export Button Is Top and Bottom Table?</label>
+            <fieldset>
+                <legend>Export Type:</legend>
+                <label for="type-xls"><input id="type-xls" name="type" type="checkbox" value="xls" /> Excel (xls)</label>
+                <label for="type-pdf"><input id="type-pdf" name="type" type="checkbox" value="pdf" /> PDF</label>
+                <label for="type-png"><input id="type-png" name="type" type="checkbox" value="png" /> PNG</label>
+            </fieldset>
+            <fieldset>
+                <legend>Export Button Position:</legend>
+                <label for="position-topright"><input id="position-topright" name="position" type="radio" value="topright" /> Top-Right</label>
+                <label for="position-topleft"><input id="position-topleft" name="position" type="radio" value="topleft" /> Top-Left</label>
+                <label for="position-bottomright"><input id="position-bottomright" name="position" type="radio" value="bottomright" /> Bottom-Right</label>
+                <label for="position-bottomleft"><input id="position-bottomleft" name="position" type="radio" value="bottomleft" /> Bottom-Left</label>
+            </fieldset>
+            <fieldset>
+                <legend>Table Style:</legend>
+                <label for="style-default"><input id="style-default" name="style" type="radio" value="" /> Default</label>
+                <label for="style-bordered"><input id="style-bordered" name="style" type="radio" value="bordered" /> Bordered</label>
+            </fieldset>
+            <fieldset>
+                <legend>Provided Table Color:</legend>
+                <label for="color-green" style="background-color:#1bbc9b;"><input id="color-green" name="color" type="radio" value="green" /> Green</label>
+                <label for="color-blue" style="background-color:#3598dc;"><input id="color-blue" name="color" type="radio" value="blue" /> Blue</label>
+                <label for="color-red" style="background-color:#e26a6a;"><input id="color-red" name="color" type="radio" value="red" /> Red</label>
+                <label for="color-yellow" style="background-color:#f7ca18;"><input id="color-yellow" name="color" type="radio" value="yellow" /> Yellow</label>
+                <label for="color-purple" style="background-color:#9b59b6;"><input id="color-purple" name="color" type="radio" value="purple" /> Purple</label>
+                <label for="color-grey" style="background-color:#afafaf;"><input id="color-grey" name="color" type="radio" value="grey" /> Grey</label>
+            </fieldset>
+            <fieldset>
+                <legend>Custom Table Color (required all):</legend>
+                <label for="head-color" style="">Heading <input type="text" id="head-color" name="head-color" class="inputpicker"></input></label>
+                <label for="col-color" style="">Column <input type="text" id="col-color" name="col-color" class="inputpicker"></input></label>
+                <label for="insct-color" style="">Intersect <input type="text" id="insct-color" name="insct-color" class="inputpicker"></input></label>
+            </fieldset>
+            <fieldset style="padding-right: 15px;">
+                <legend>Result:</legend>
+                <textarea name="result" id="result" rows="3" style="width: 100%"></textarea>
+            </fieldset>
+        </div>
+        <button style="margin-top: 10px;" class="btn btn-default" id="refresh">Generate It!</button>
+        <a class="btn btn-default" href="../" style="float:right; margin-top: 10px; color: blue;">Read Documentation</a>
+    </div>
+</div>
+<div id="preview-area" style="float: left; min-width: 300px;">
+    <table class="overflow-y preview">
+        <thead>
+        <tr>
+            <th rowspan="3">Population</th><th colspan="2" style="text-align:center">Alpha</th><th>Gamma</th><th>Delta</th><th>Epsilon</th><th>Zeta</th><th>Eta</th><th>Theta</th><th>Iota</th><th>Kappa</th><th>Lambda</th><th>Mu</th>
+        </tr>
+        <tr>
+            <th>Alpha</th><th>Beta</th><th>Gamma</th><th>Delta</th><th>Epsilon</th><th>Zeta</th><th>Eta</th><th>Theta</th><th>Iota</th><th>Kappa</th><th>Lambda</th><th>Mu</th>
+        </tr>
+        <tr>
+            <th>Alpha</th><th>Beta</th><th>Gamma</th><th>Delta</th><th>Epsilon</th><th>Zeta</th><th>Eta</th><th>Theta</th><th>Iota</th><th>Kappa</th><th>Lambda</th><th>Mu</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{range .Items}}
+        <tr>
+            <td><a href="{{.Url}}">{{.Payload.Name}}</a></td>
+        {{with .Payload}}
+            <td>{{.Gender}}</td>
+            <td>{{.Age}}</td>
+            <td>{{.Height}}</td>
+            <td>{{.Weight}}</td>
+            <td>{{.Income}}</td>
+            <td>{{.Marriage}}</td>
+            <td>{{.Education}}</td>
+            <td>{{.Occupation}}</td>
+            <td>{{.Hokou}}</td>
+            <td>{{.Xinzuo}}</td>
+            <td>{{.House}}</td>
+            <td>{{.Car}}</td>
+        {{end}}
+        </tr>
+        [<!--注意这里的end，上一个end结束range，这个end才是结束整段语句 -->]
+        {{end}}
+        </tbody>
+    </table>
+</div>
+<script type="text/javascript" src="assets/js/json2.js"></script>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/js/third-party/exporter/jquery.base64.js"></script>
+<script type="text/javascript" src="assets/js/third-party/exporter/jspdf.js"></script>
+<script type="text/javascript" src="assets/js/third-party/exporter/jspdf.standard_fonts_metrics.js"></script>
+<script type="text/javascript" src="assets/js/third-party/exporter/jspdf.split_text_to_size.js"></script>
+<script type="text/javascript" src="assets/js/third-party/exporter/jspdf.png_support.js"></script>
+<script type="text/javascript" src="assets/js/third-party/exporter/jspdf.context2d.js"></script>
+<script type="text/javascript" src="assets/js/third-party/exporter/jspdf.canvas.js"></script>
+<script type="text/javascript" src="assets/js/third-party/exporter/jspdf.annotations.js"></script>
+<script type="text/javascript" src="assets/js/third-party/exporter/html2canvas.js"></script>
+<script type="text/javascript" src="assets/js/third-party/exporter/html2pdf.js"></script>
+<script type="text/javascript" src="assets/js/kidd.stickytable.min.js"></script>
+<script type="text/javascript" src="assets/js/colpick.js"></script>
+<script>
+    $(function(){
+        $('table.preview').stickyTable({style : 'stripped'});
+        $('#showExportBtn').attr('checked','checked');
+        $("input[name='type']").attr('checked','checked');
+        $('#isTwoSide').removeAttr('checked');
+        $("#position-topright").attr('checked','checked');
+        $("#style-default").attr('checked','checked');
+        $("#color-green").attr('checked','checked');
+        $('.inputpicker').val('');
+        $('.inputpicker').colpick({
+            layout:'hex',
+            submit:0,
+            colorScheme:'dark',
+            onChange:function(hsb,hex,rgb,el,bySetColor) {
+                $(el).css('border-color','#'+hex);
+                // Fill the text box just if the color was set using the picker, and not the colpickSetColor function.
+                if(!bySetColor) $(el).val('#'+hex);
+            }
+        }).keyup(function(){
+            $(this).colpickSetColor(this.value);
+        });
+        $('#refresh').click(function(){
+            var options = {};
+            options.showExportBtn = $('#showExportBtn').is(":checked");
+            options.exporter = {};
+            var type = [];
+            $("input[name='type']:checked").each(function(){
+                type.push($(this).val());
+            });
+            if (type.length > 0) options.exporter.type = type.join(',');
+            options.exporter.isTwoSide = $('#isTwoSide').is(":checked");
+            options.exporter.position = $('input[name="position"]:checked').val();
+            options.style = $('input[name="style"]:checked').val();
+            options.color = $('input[name="color"]:checked').val();
+            var customColor = [];
+            if ($('#head-color').val() != "")
+                customColor.push($('#head-color').val());
+            if ($('#col-color').val() != "")
+                customColor.push($('#col-color').val());
+            if ($('#insct-color').val() != "")
+                customColor.push($('#insct-color').val());
+            options.customColor = customColor;
+            $('table.preview').stickyTable(options);
+            $('#result').val(JSON.stringify(options, null, '\t'));
+        });
+        $('#refresh').trigger('click');
+    });
+</script>
+</body>
+</html>
