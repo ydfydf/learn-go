@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Run nginx docker'
-                sh '/root/go/run-nginx-docker.sh'
+                sh '~/echo-test.sh'
             }
         }
     }
